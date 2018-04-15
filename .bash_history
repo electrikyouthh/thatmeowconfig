@@ -44,3 +44,136 @@ git config --help
 #
  
 if [ -n "$SSH_ASKPASS_TMPFILE" ]; then     cat “$SSH_ASKPASS_TMPFILE”;     exit 0; elif [ $# -lt 1 ]; then     echo “Usage: echo password | $0 <ssh command line options>” >&2;     exit 1; fi
+git status
+git add .bash_history
+git add .gitconfig
+git .ssh/
+git add .ssh
+git status
+git commit -m "git and configs"
+git add '*.gitconfig'
+git add '*.bash_history'
+git add '*.keys'
+git add '*.authorized_keys'
+git add '.*ssh'
+git commit -m 'add all . files'
+git log
+git remote add origin https://github.com/electrikyouthh/thatmeowconfig.git
+git push -u origin master
+git fetch
+git push -u origin master
+git push -u origin master
+git fetch
+git push -u origin master
+git pull origin master
+git pull -f origin master
+git pull --help
+git pull -ff origin master
+git merge --allow-unrelated-histories
+git pull --allow-unrelated-histories origin master
+git push -u origin master
+git push -u origin master
+git pull origin master
+git diff HEAD
+git status
+git add .viminfo
+git commit -m "info added"
+git push
+git config --help
+apt-get install autotools, curl, zlib, openssl
+apt install autotools
+apt install zlib
+apt install expat
+apt search
+apt search expqt
+logout
+apt search expat
+apt install libexpat-dev
+apt-get install libiconv zlib curl
+apt install libiconv
+apt search libiconv
+apt search curl
+apt install libcurl-dev
+apt search libssl
+apt search libssl
+apt search libssh
+wget https://github.com/git-for-windows/git/releases/download/v2.16.2.windows.1/Git-2.16.2-32-bit.exe
+ls
+exe
+tar
+rm -rR Git-2.16.2-32-bit.exe
+ls
+chmod 700 setup-android-sdk.sh
+ls
+wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.16.3.tar.gz
+ls
+tar xzf git-2.16.3.tar.gz
+ls
+cd git-2.16.3
+ls
+./configure
+ls
+automake ; make ; make install
+ls
+apt search pe
+apt search perl
+apt-get install pcre2 
+perl -MLWP -le "print(LWP->VERSION)"
+% perl -MCPAN -eshell
+% perl -MCPAN -eshell
+perldoc
+perldoc CPAN
+% perl -MCPAN -e shell
+perl -MCPAN -e shell
+ls
+./configure
+ls
+./config.status
+git status
+git add ../.cpan/
+git add ../.wget-hsts
+git add ../git-2.16.3.tar.gz
+git add ./
+automake
+autoconf
+ls
+make install
+make gettext.o
+make langinfo.h
+make langinfo
+make configure
+make build
+make git
+ls
+make cflags
+make utils
+make diff
+make daemon
+make worktree
+make --help
+make --always-make
+ls
+cd
+ls
+rm -Rr git-2.16.3.tar.gz
+ls
+ls
+#!/bin/sh
+echo "This script sets up the Termux App."
+masterzip_url="https://github.com/alexs77/termux-config/archive/master.zip"
+masterzip_file="$HOME/tmp/termux-config-master.zip"
+masterzip_dir="$HOME/tmp/termux-config"
+master_dir="$masterzip_dir/termux-config-master"
+package_file="$master_dir/data/packages.txt"
+mkdir -p "$HOME/tmp" "$HOME/bin"
+[ -f "$masterzip_file" ] || wget -O "$masterzip_file" "$masterzip_url"
+rm -rf "$masterzip_dir"
+mkdir -p "$masterzip_dir"
+busybox unzip -d "$masterzip_dir" "$masterzip_file"
+packages="`busybox sed 's, -.*,,' "$package_file"`"
+apt install -y $packages
+cp -rp "$master_dir/data/HOME/." "$HOME"
+rm -f "$HOME/.vimrc"
+ln -s ".vim/.vimrc" "$HOME/.vimrc"
+exit $?
+exit
