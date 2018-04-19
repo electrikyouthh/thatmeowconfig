@@ -198,3 +198,6 @@ apt update
 git clone https://github.com/xeffyr/termux-x-repository.git
 su
 logout
+midnight
+su
+logout
