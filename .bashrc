@@ -93,3 +93,4 @@ if ! shopt -oq posix; then
 fi
 
 # EOF
+export GPG_TTY=$(tty)

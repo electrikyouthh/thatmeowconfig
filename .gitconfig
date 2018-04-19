@@ -1,6 +1,7 @@
 [user]
 	email = electrikyouthx@hotmail.com
 	name = Electrik Youth
+	signingkey = A34EBE804C64F4E4
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
